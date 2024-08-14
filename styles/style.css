@@ -37,6 +37,10 @@ body {
     color: #E6533C;
     margin-bottom: 20px;
 }
+.top{
+    padding-left: -20px;
+    height: 100%;
+}
 
 .nav {
     display: flex;
@@ -212,10 +216,8 @@ opacity: 0px;
 }
 
 .chart-container {
-    display: flex;
-    flex-direction: column;
-    margin-right: 174px;
-}
+     flex:1;
+     max-width: 600px;}
 
 .chart-header {
     margin-bottom: 52px;
@@ -265,8 +267,11 @@ opacity: 0px;
 }
 
 .calculator-container {
-    display: flex;
-    flex-direction: column;
+    flex: 1; 
+    max-width: 600px; 
+    background-color: #222222; 
+    border-radius:
+  
 }
 
 .calculator-header {
