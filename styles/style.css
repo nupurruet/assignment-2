@@ -6,6 +6,7 @@ body {
     background-color: #222222;
 }
 .title,.nav{
+    display: flex;
     justify-content: space-between;
 }
 
@@ -38,8 +39,12 @@ body {
     margin-bottom: 20px;
 }
 .top{
-    padding-left: -20px;
-    height: 100%;
+    background-image: url('../images/images_3.png');
+    position: absolute;
+    right: 214px;
+    bottom: 0;
+    width: 349px;
+    height: 580px;
 }
 
 .nav {
@@ -198,14 +203,21 @@ body {
     cursor: pointer;
 }
 
+.duad{
+    width:100%;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-around;
+}
 .image-container {
     width: 366px;
-height: 312px;
-top: 30px;
-left: 662px;
-gap: 0px;
-border-radius: 18px 0px 0px 0px;
-opacity: 0px;
+    height: 312px;
+    top: 30px;
+    left: 662px;
+    gap: 0px;
+    border-radius: 18px 0px 0px 0px;
+    opacity: 0px;
+    
 
 }
 
@@ -214,58 +226,62 @@ opacity: 0px;
     height: 100%;
     object-fit: cover;
 }
-
-.chart-container {
-     flex:1;
-     max-width: 600px;}
-
-.chart-header {
-    margin-bottom: 52px;
-}
-
-.chart-title {
+.bmi{
     font-weight: 900;
     font-size: 28px;
     color: #FFFFFF;
+    margin-bottom: 14px;
+}
+.bmi-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    margin: 20px;
 }
 
-.chart-content {
-    display: flex;
-    align-items: flex-start;
+.bmi-table td {
+    vertical-align: top;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
-.chart-column {
-    display: flex;
-    flex-direction: column;
-    margin-right: 16px;
+.bmi-column,
+.weight-status-column {
+    width: 300px; 
 }
 
-.chart-column-content {
-    display: flex;
-    flex-direction: column;
+.spacer {
+    width: 20px; 
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-.chart-label {
+.bmi-header,
+.weight-status-header {
     font-weight: 500;
     font-size: 16px;
     color: #FFFFFF;
     margin-bottom: 27px;
 }
 
-.chart-item {
+.bmi-item,
+.weight-status-item {
     font-weight: 400;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 24px;
+    line-height: 1.2;
 }
 
-.chart-divider {
+.bmi-item:last-child,
+.weight-status-item:last-child {
+    margin-bottom: 0;
+}
+
+.bmi-column,
+.weight-status-column {
     background-color: rgba(255, 255, 255, 0.1);
-    width: 0;
-    height: 216px;
-    margin-left: 22px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2); /* Optional: Add a border for clarity */
 }
-
 .calculator-container {
     flex: 1; 
     max-width: 600px; 
